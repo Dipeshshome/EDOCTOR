@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Prescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prescription"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_marginVertical="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="FUll NAME"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginVertical="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/patientname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="FULL Name"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            />
+
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="AGE"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:layout_marginVertical="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/patientage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="AGE"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginVertical="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+
+            />
+        <EditText
+            android:id="@+id/patientweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:layout_marginVertical="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="0dp"
+            android:hint="Date"
+            android:inputType="text"
+            android:textStyle="bold"
+
+            />
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Diagnosed with"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:layout_marginVertical="2dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/disease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="0dp"
+            android:hint="Diagnosed with"
+            android:inputType="text"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Blood Preassure"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:layout_marginVertical="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/bp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="0dp"
+            android:hint="Blood Preassure"
+            android:inputType="text"
+            android:textStyle="bold"
+
+            />
+
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:layout_marginVertical="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="0dp"
+            android:hint="Heart Rate"
+            android:inputType="text"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Medicine"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:layout_marginVertical="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/patientmedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:hint="Medicine"
+            android:textStyle="bold"
+
+            />
+
+
+        <TextView
+
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:layout_marginTop="10dp"
+            android:text="Examination to be done (if any):"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:hint="test"
+            android:textStyle="bold"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/submitPrescription"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="SUBMIT"
+
+
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

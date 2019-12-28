@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="blood_groups">
+        <item>Select Blood Group</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+    </string-array>
+    <string-array name="city_names">
+        <item>Select City</item>
+        <item>Dhaka</item>
+        <item>Chittagong</item>
+        <item>Khulna</item>
+        <item>Barishal</item>
+        <item>Cumilla</item>
+        <item>Mymensing</item>
+        <item>Rajshahi</item>
+
+    </string-array>
+
+
+    <string-array name="doctor_department" >
+        <item>Select Department</item>
+        <item>Haematology</item>
+        <item>Neurology</item>
+        <item>Gastrology</item>
+        <item>Orthopedics</item>
+        <item>Pediatricks</item>
+        <item>Medicine</item>
+        <item>Dental</item>
+
+    </string-array>
+    <string-array name="doctor_names">
+        <item>Select Doctor</item>
+        <item>Dr.Biju Goerge</item>
+        <item>Dr.Vikram</item>
+        <item>Dr.Afreen</item>
+        <item>Dr.Suhani</item>
+        <item>Dr.Morris Mano</item>
+        <item>Dr Nayeem</item>
+        <item>Dr.Mamunur Rashid</item>
+
+    </string-array>
+
+    <string-array name="appointment_time">
+        <item>Select Time</item>
+        <item>8.00PM</item>
+        <item>8.15PM</item>
+        <item>8.30PM</item>
+        <item>8.45PM</item>
+        <item>9.00PM</item>
+        <item>9.15PM</item>
+        <item>9.30PM</item>
+        <item>9.45PM</item>
+        <item>10.00PM</item>
+
+
+    </string-array>
+
+</resources>

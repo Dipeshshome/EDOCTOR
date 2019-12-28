@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appointments"
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDFBFB"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6C02"
+            android:text="E-"
+            android:textStyle="italic"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="DOCTOR"
+            android:textColor="#00d4a4"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+        <ImageButton
+            android:id="@+id/reg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="195dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/ic_user" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/doctorappointment"/>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:background="@drawable/textview_border">
+
+
+
+        <TextView
+            android:id="@+id/labelID"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Membership ID:"
+            android:textAlignment="center"
+            android:textColor="#00d4a4"
+            android:textSize="20sp"
+
+            />
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+       />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border">
+
+        <TextView
+            android:id="@+id/labelname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="Patient Name:"
+            android:textColor="#00d4a4"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/resultViewid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border">
+
+        <TextView
+            android:id="@+id/deptEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/labeldept"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Department:"
+            android:textAlignment="center"
+            android:textColor="#00d4a4"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            >
+
+
+        </Spinner>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border">
+
+        <TextView
+            android:id="@+id/doctorEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/labeldoctor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Doctor:"
+            android:textAlignment="center"
+            android:textColor="#00d4a4"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            >
+
+
+        </Spinner>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border">
+
+        <TextView
+            android:id="@+id/labeldate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="Visiting Date:"
+            android:textColor="#00d4a4"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:id="@+id/DOB"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:text="MM/DD/YYY"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_border">
+
+        <TextView
+            android:id="@+id/labeltime"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="Visiting Time:"
+            android:textColor="#00d4a4"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/timeEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            >
+
+
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmid"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_rounded"
+        android:text="Confirm Appointment"
+        android:textColor="#ffff"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_rounded"
+        android:text="Booked Appointments"
+        android:textColor="#ffff"
+        android:textSize="22sp"
+
+       />
+
+
+
+</LinearLayout>

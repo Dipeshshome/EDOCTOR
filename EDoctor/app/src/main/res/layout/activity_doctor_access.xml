@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    android:weightSum="10"
+    tools:context=".DoctorAccess">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDFBFB"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6C02"
+            android:text="E-"
+            android:textStyle="italic"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="DOCTOR"
+            android:textColor="#00d4a4"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+        <ImageButton
+            android:id="@+id/reg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="210dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/ic_user" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_doctor" />
+
+    </LinearLayout>
+
+
+
+
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:background="#E9E7E7"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="8dp"
+        android:rowCount="1">
+
+        <!-- ROW 1  -->
+        <!-- COLUMN 1  -->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/appontmentlist"
+            android:layout_width="14dp"
+            android:layout_height="78dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="354dp"
+                android:layout_height="68dp"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_checklist"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Appointment List"
+                    android:layout_marginLeft="20sp"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                     />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- COLUMN 2  -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/prescription"
+            android:layout_width="14dp"
+            android:layout_height="78dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="354dp"
+                android:layout_height="68dp"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_medical_history"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Prescription"
+                    android:layout_marginLeft="20sp"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                   />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- ROW 2  -->
+        <!-- COLUMN 1  -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/appontmentcreate"
+            android:layout_width="14dp"
+            android:layout_height="78dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="354dp"
+                android:layout_height="68dp"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_payment_method"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Withdraw Payment"
+                    android:layout_marginLeft="20sp"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </GridLayout>
+
+
+
+</LinearLayout>

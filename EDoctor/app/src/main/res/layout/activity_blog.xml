@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write Blog"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_marginVertical="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="BLOG HEADING"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginVertical="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/blogHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="Heading"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginTop="10dp"
+            android:text="EXPERIENCE SHARING"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+        <EditText
+            android:id="@+id/blogExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="Share Experience"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="MOTIVATE"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:layout_marginVertical="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/blogMotivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="Motivation"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Advice"
+            android:textColor="#120000"
+            android:textSize="20dp"
+            android:layout_marginVertical="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/blogAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:hint="Advice"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+
+        <Button
+            android:id="@+id/submitBlog"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="SUBMIT"
+
+
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

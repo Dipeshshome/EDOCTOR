@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingRight="15dp"
+android:paddingLeft="15dp"
+android:paddingBottom="20dp"
+tools:context=".Doctorprofile">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_person_black_24dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fullname"
+        android:layout_below="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#00d4a4"
+        >
+
+        <EditText
+            android:id="@+id/fullnameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Full Name"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#00d4a4"
+        android:layout_below="@+id/fullname"
+        >
+
+        <EditText
+            android:id="@+id/usernameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:ems="10"
+            android:textColor="#000"
+            android:inputType="text"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#00d4a4"
+        android:layout_below="@+id/username"
+        >
+
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:ems="10"
+            android:textColor="#000"
+            android:inputType="text"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/pass"
+        android:layout_below="@+id/email"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#00d4a4"
+        >
+
+        <EditText
+            android:id="@+id/passwordid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:ems="10"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cpass"
+        android:layout_below="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#00d4a4"
+        >
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <RadioGroup
+
+        android:layout_below="@+id/cpass"
+        android:id="@+id/genderid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="4dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        android:textColorHint="#00d4a4"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#00d4a4"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/radMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:onClick="checkButton"
+
+            />
+        <RadioButton
+            android:id="@+id/radFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:onClick="checkButton" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/BMA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_below="@+id/spinner1"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#00d4a4"
+        >
+
+        <EditText
+            android:id="@+id/BMAEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#000"
+            android:hint="BMA Registration No"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_below="@+id/spinner1"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#00d4a4"
+        >
+
+        <EditText
+            android:id="@+id/deptEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#000"
+            android:hint="Department"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/labeldate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderid"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        android:text="Select date of Birth"
+        android:textColor="#00d4a4"
+        android:textSize="20sp"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MM/DD/YYY"
+        android:id="@+id/DOB"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="9dp"
+        android:layout_below="@+id/labeldate"/>
+
+
+    <TextView
+
+        android:id="@+id/blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DOB"
+
+        android:text="Select Blood Group"
+        android:textColor="#00d4a4"
+        android:textSize="20sp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/blood"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+
+        >
+
+
+    </Spinner>
+
+    <TextView
+
+        android:id="@+id/city"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00d4a4"
+        android:layout_below="@+id/spinner"
+        android:text="Select City"
+        android:textSize="20sp"
+        />
+    <Spinner
+        android:id="@+id/spinner1"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_below="@+id/city"
+        android:layout_alignParentStart="true"
+
+        >
+
+    </Spinner>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_below="@+id/spinner1"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#00d4a4"
+        >
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#000"
+            android:hint="Contact Number"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Number"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_rounded"
+        android:text="Register"
+        android:textColor="#ffff"
+        android:textSize="22sp"
+
+        />
+
+</LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

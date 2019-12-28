@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calling"
+    android:padding="10dp"
+    android:background="#E9E7E7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDFBFB"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6C02"
+            android:text="E-"
+            android:textStyle="italic"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="DOCTOR"
+            android:textColor="#00d4a4"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+        <ImageButton
+            android:id="@+id/reg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="190dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/ic_user" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_support" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Chat With Your Doctor"
+            android:layout_marginTop="12dp"
+            android:textColor="#00d4a4"
+            android:textSize="18sp"
+            android:textAlignment="center"
+
+            />
+
+        <ImageButton
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/ic_textsms_black1_24dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+            android:text="Call Your Doctor"
+            android:textAlignment="center"
+            android:textColor="#00d4a4"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/image_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/ic_phone_in_talk_black_24dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:text="OUR SOCIAL LINKS"
+        android:textColor="#FF6C02"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:text="Connect With Facebook"
+            android:textAlignment="center"
+            android:textColor="#00d4a4"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/ic_facebook" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:text="Connect With Instagram"
+            android:textAlignment="center"
+            android:textColor="#00d4a4"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/Instagram"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/ic_instagram" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

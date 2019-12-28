@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="28dp"
+    tools:context=".Completeprofile">
+    <ImageView
+        android:id="@+id/userpic"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+
+        android:padding="2dp"
+        android:text=" Dipesh"
+        android:textColor="#FF6C02"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ID"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:padding="3dp"
+        android:textColor="#FF6C02"
+        android:text="Membership ID: 6702P" />
+
+
+    <Button
+        android:id="@+id/completeprofile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_border"
+        android:padding="7dp"
+        android:textSize="15sp"
+
+        android:text="Complete Profile"
+        android:textColor="#048dc9" />
+
+</RelativeLayout>

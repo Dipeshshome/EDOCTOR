@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e_doctor">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Prescription"></activity>
+        <activity android:name=".DoctorAccess" />
+        <activity android:name=".Calling" />
+        <activity android:name=".HomeDoctor" />
+        <activity android:name=".Appointments" />
+        <activity android:name=".Doctorprofile" />
+        <activity android:name=".Home" />
+        <activity android:name=".Loginas" />
+        <activity android:name=".Userprofile" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
